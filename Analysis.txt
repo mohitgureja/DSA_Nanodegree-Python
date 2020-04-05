@@ -1,0 +1,46 @@
+Worst case Time Complexity :
+
+Task 0-
+
+open() - 		O(c) where c is constant
+csv.reader() - 	O(n) where n is input csv rows
+list(reader) - 	O(n)
+
+Worst case time complexity is order of n i.e O(n)
+
+
+Task 1 -
+
+reading - 	O(n)
+for loop -	O(n) for each n
+			O(n) 'not in' search and set.add worst case
+
+So worst case complexity is Order of n^2 i.e O(n^2) 
+
+
+Task 2 - 
+
+reading -	O(n)
+for loop -	O(n)
+Rest all operations are O(c) where c is constant
+
+So worst case complexity is Order of n i.e O(n)
+
+
+Task 3 -
+
+reading - 	O(n)
+for loop - 	O(n)
+			All operations inside loop can be considered as constant 
+			as number is of fixed length
+set.add - 	O(n) for its worst case
+			
+So worst case complexity is order of n i.e O(n^2)
+
+
+Task 4 -
+reading - 	O(n)
+function get_telemarketers(set,calls) - O(n^2) in worst case can go up to n^2
+
+
+So worst case time complexity will be O(n^2)
