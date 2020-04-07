@@ -10,10 +10,8 @@ def unique_num(number_file):
         reader = csv.reader(f)
         numbers_list = list(reader)
         for number in numbers_list:
-                if(number[0] not in number_set):
-                    number_set.add(number[0])
-                if(number[1] not in number_set):
-                    number_set.add(number[1])
+        	number_set.add(number[0])
+        	number_set.add(number[1])
 
 unique_num('texts.csv')
 unique_num('calls.csv')

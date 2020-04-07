@@ -32,7 +32,7 @@ with open('calls.csv', 'r') as f:
 
 number_set = get_telemarketers(get_removable_telemarketers(texts,calls),calls)
 print ("These numbers could be telemarketers: ")
-for number in number_set:
+for number in sorted(number_set):
 	print (number)
 
 """
