@@ -1,8 +1,9 @@
+import csv
+
 """
 Read file into texts and calls.
 It's ok if you don't understand how to read files.
 """
-import csv
 
 with open('texts.csv', 'r') as f:
     reader = csv.reader(f)
@@ -14,7 +15,6 @@ with open('calls.csv', 'r') as f:
     calls = list(reader)
     call = calls[-1]
     print(f'Last record of calls, {call[0]} calls {call[1]} at time {call[2]}, lasting {call[3]} seconds')
-
 """
 TASK 0:
 What is the first reocrd of texts and what is the last record of calls?
